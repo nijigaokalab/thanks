@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>特別無料動画視聴ページ</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+        }
+        .header-bg {
+            background: linear-gradient(135deg, #6366F1 0%, #3B82F6 100%);
+        }
+        .video-container {
+            position: relative;
+            padding-top: 56.25%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .info-card {
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .benefit-item {
+            transition: all 0.3s ease;
+        }
+        .benefit-item:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto px-4 py-8">
+        <div class="header-bg rounded-lg p-8 mb-8 text-white text-center">
+            <div class="animate-bounce inline-block mb-4">
+                <i class="fas fa-check-circle text-5xl"></i>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4">ご登録ありがとうございます！</h1>
+            <p class="text-lg md:text-xl">お問い合わせありがとうございます。特別な無料動画をご覧いただけます。</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">特別コンテンツ：無料動画</h2>
+            <div class="video-container mb-4">
+                <video controls playsinline webkit-playsinline class="rounded-lg">
+                    <source src="https://youtu.be/XH6llZcybEI?si=jM5CijCqlzw8wRkc" type="video/mp4">
+                    お使いのブラウザは動画再生に対応していません。
+                </video>
+            </div>
+            <div class="text-sm text-gray-600 mt-2">
+                <p>※ 動画はフルスクリーンでもご覧いただけます。右下の拡大ボタンをクリックしてください。</p>
+            </div>
+        </div>
+        <div class="info-card bg-white p-6 rounded-lg shadow-md mb-8">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">動画の内容</h2>
+            <p class="text-gray-700 mb-4">
+                この特別動画では、当社の商品・サービスの活用方法や秘訣について詳しく解説しています。ぜひ最後までご覧いただき、より効果的な活用方法をマスターしてください。
+            </p>
+            <h3 class="text-xl font-semibold mt-6 mb-3 text-gray-800">動画の主なポイント</h3>
+            <ul class="space-y-3">
+                <li class="flex items-start">
+                    <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                    <span class="text-gray-700">基本的な使い方と初期設定のコツ</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                    <span class="text-gray-700">上級者向けの活用テクニック</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                    <span class="text-gray-700">よくある質問とその解決方法</span>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                    <span class="text-gray-700">他のユーザーの成功事例紹介</span>
+                </li>
+            </ul>
+        </div>
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold mb-6 text-gray-800">特典について</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="benefit-item bg-white p-5 rounded-lg shadow-md">
+                    <div class="text-indigo-600 mb-3">
+                        <i class="fas fa-gift text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">初回購入10%OFF</h3>
+                    <p class="text-gray-700">動画内で紹介している特別クーポンコードをご利用いただくと、初回購入が10%OFFになります。</p>
+                </div>
+                <div class="benefit-item bg-white p-5 rounded-lg shadow-md">
+                    <div class="text-indigo-600 mb-3">
+                        <i class="fas fa-book text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">無料eBook</h3>
+                    <p class="text-gray-700">登録したメールアドレス宛に、さらに詳しい内容を解説したeBookを無料でお送りします。</p>
+                </div>
+                <div class="benefit-item bg-white p-5 rounded-lg shadow-md">
+                    <div class="text-indigo-600 mb-3">
+                        <i class="fas fa-headset text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">優先サポート</h3>
+                    <p class="text-gray-700">お問い合わせいただいたお客様には、優先的にサポートをご提供します。</p>
+                </div>
+                <div class="benefit-item bg-white p-5 rounded-lg shadow-md">
+                    <div class="text-indigo-600 mb-3">
+                        <i class="fas fa-bell text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">最新情報のお知らせ</h3>
+                    <p class="text-gray-700">新商品や限定キャンペーンなどの情報をいち早くお届けします。</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-6 bg-gray-100 rounded-lg shadow-inner">
+            <h3 class="text-xl font-bold mb-3 text-gray-800">さらに詳しい情報をご希望の方</h3>
+            <p class="text-gray-700 mb-4">商品についてさらに詳しく知りたい方は、下記のボタンから公式サイトをご覧ください。</p>
+            <a href="#" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+                公式サイトを見る <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+        <footer class="mt-12 text-center text-gray-600 text-sm">
+            <p class="mb-2">この特別コンテンツは登録者限定です。無断での共有はご遠慮ください。</p>
+            <p>&copy; 2023 会社名 All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
